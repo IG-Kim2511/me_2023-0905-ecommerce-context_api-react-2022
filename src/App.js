@@ -15,7 +15,7 @@ import "./App.css"
 
 import CartPage from './pages/CartPage';
 import ProductPage from './pages/ProductPage';
-import { CartProvider } from './context/CartContext';
+import { CartProvider } from './context/cart/CartContext';
 
 
 function App() {

@@ -1,6 +1,6 @@
 // ProductPage.js
 import React from 'react';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/cart/CartContext';
 
 const ProductPage = ({ product }) => {
   const { dispatch } = useCart();
