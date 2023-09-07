@@ -1,12 +1,19 @@
 
-/*   <🚀🚀point skill + AI 질문목록>
-
-  <🍄🍄>
+/*   
+  <🚀🚀point skill + AI 질문목록>
  🍉context api : show example how to use context api with cart and product page.
    use context api, configurestore, dispatch, reducer, useSelector, localstorage
   plus, minus,remove button: add plus, minus,remove button on cart page. 
   localstorage : save items on cart page on localstorage
 
+  🍉bug : when i click plus btn, i get 'nan'
+
+  
+  <🍄🍄>
+  // ProductPage.js
+  // CartPage.js
+  // cartReducer.js
+  // CartContext.js
 */
 
 
