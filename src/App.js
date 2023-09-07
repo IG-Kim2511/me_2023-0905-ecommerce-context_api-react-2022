@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
-import './App.css';
-=======
+
 /*   <🚀🚀point skill + AI 질문목록>
 
   <🍄🍄>
@@ -21,14 +18,10 @@ import CartPage from './pages/CartPage';
 import ProductPage from './pages/ProductPage';
 import { CartProvider } from './context/cart/CartContext';
 
->>>>>>> 0907-1
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <div>App</div>
-  )
-=======
+
     <CartProvider>
       <div>
         <ProductPage product={{ id: 1, name: 'Product 1', description: 'Description 1' }} />
@@ -37,7 +30,6 @@ const App = () => {
       </div>
     </CartProvider>
   );
->>>>>>> 0907-1
 }
 
 export default App
