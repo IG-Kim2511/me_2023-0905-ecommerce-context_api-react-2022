@@ -18,21 +18,34 @@
 
 
 // App.js
-import React from 'react';
+import React, { useState } from 'react';
 import "./App.css"
 
 import CartPage from './pages/CartPage';
 import ProductPage from './pages/ProductPage';
 import { CartProvider } from './context/cart/CartContext';
+import ProductAPI from './pages/ProductAPI';
 
 
 const App = () => {
+
+  const [click, setClick] = useState(true)
   return (
 
     <CartProvider>
       <div>
-        <ProductPage product={{ id: 1, name: 'Product 1', description: 'Description 1' }} />
-        <ProductPage product={{ id: 2, name: 'Product 2', description: 'Description 2' }} />
+        <div>
+          <h1>simple example</h1>
+          <ProductPage product={{ id: 1, name: 'Product 1', description: 'Description 1' }} />
+          <ProductPage product={{ id: 2, name: 'Product 2', description: 'Description 2' }} />
+          
+        </div>
+        <div>
+          <h1>fakeapi product example</h1>
+          <button onClick={()=>{setClick(!click)}}>click</button>
+          {click ===false ?<ProductAPI/>:null
+        }
+        </div>
         <CartPage />
       </div>
     </CartProvider>
